@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Arena</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div id="game_container" style="display: none;">
+		<div id='seleccion_de_clase_y_stats_base'>
+			<select id='clase'>
+				<option>Wizard</option>
+			</select>
+			<div id="skills">
+				<button data-skill="heatBeam">Heat beam</button>
+				<button style='display: none;' data-skill="burningHands">Burning hands</button>
+				<button style='display: none;' data-skill="enchant">Enchant</button>
+				<button style='display: none;' data-skill="hydra">Hydra</button>
+				<button style='display: none;' data-skill="meteor">Meteor</button>
+				<button style='display: none;' data-skill="fireShield">Fire shield</button>
+				<button data-skill="iceBarrier">Ice barrier</button>
+				<button style='display: none;' data-skill="frozenShield">Frozen shield</button>
+				<button style='display: none;' data-skill="frostNova">Frost nova</button>
+				<button style='display: none;' data-skill="iceLance">Ice lance</button>
+				<button style='display: none;' data-skill="congeal">Congeal</button>
+				<button style='display: none;' data-skill="staticShield">Static shield</button>
+				<button data-skill="thunderstorm">Thunderstorm</button>
+				<button style='display: none;' data-skill="teleport">Teleport</button>
+				<button style='display: none;' data-skill="shockwave">Shockwave</button>
+				<button style='display: none;' data-skill="chainLightning">Chain lightning</button>
+				<button style='display: none;' data-skill="blink">Blink</button>
+				<button style='display: none;' data-skill="firestorm">Firestorm</button>
+			</div>
+		</div>
+		<div id="seleccion_de_items" style="display: none;">
+			<div id="personaje">
+				<!--borrar de acá...-->
+				<div style="position:absolute; top:0; left:0; width:340px; height:285px;padding:8px; box-sizing: border-box;">
+					Arma: <span id="nombreDelArma"></span>
+					<br>
+					Escudo: <span id="nombreDelEscudo"></span>
+					<br>
+					Armadura: <span id="nombreDeLaArmadura"></span>
+					<br>
+					Casco: <span id="nombreDelCasco"></span>
+					<br>
+					Amuleto: <span id="nombreDelAmuleto"></span>
+				</div>
+				<!--...hasta acá-->
+				<canvas id="items_equipados"></canvas>
+				<div id="stats">
+					<div>
+						<div>
+							<span>Strength</span>
+							<span></span>
+						</div>
+						<div>
+							<span>Defense</span>
+							<span>8</span>
+						</div>
+					</div>
+					<div>
+						<div>
+							<span>Drain</span>
+							<span>10%</span>
+						</div>
+						<div>
+							<span>Multiplier against fire</span>
+							<span>2</span>
+						</div>
+					</div>
+					<div>
+						<div>
+							<span>Attack</span>
+							<span>3</span>
+						</div>
+						<div>
+							<span>Defense</span>
+							<span>8</span>
+						</div>
+					</div>
+					<div>
+						<div>
+							<span>Drain</span>
+							<span>10%</span>
+						</div>
+						<div>
+							<span>Multiplier against fire</span>
+							<span>2</span>
+						</div>
+					</div>
+					<div>
+						<div>
+							<span>Attack</span>
+							<span>3</span>
+						</div>
+						<div>
+							<span>Defense</span>
+							<span>8</span>
+						</div>
+					</div>
+					<div>
+						<div>
+							<span>Drain</span>
+							<span>10%</span>
+						</div>
+						<div>
+							<span>Multiplier against fire</span>
+							<span>2</span>
+						</div>
+					</div>
+					<div>
+						<div>
+							<span>Attack</span>
+							<span>3</span>
+						</div>
+						<div>
+							<span>Defense</span>
+							<span>8</span>
+						</div>
+					</div>
+					<div>
+						<div>
+							<span>Drain</span>
+							<span>10%</span>
+						</div>
+						<div>
+							<span>Multiplier against fire</span>
+							<span>2</span>
+						</div>
+					</div>
+					<div>
+						<div>
+							<span>Attack</span>
+							<span>3</span>
+						</div>
+						<div>
+							<span>Defense</span>
+							<span>8</span>
+						</div>
+					</div>
+					<div>
+						<div>
+							<span>Drain</span>
+							<span>10%</span>
+						</div>
+						<div>
+							<span>Multiplier against fire</span>
+							<span>2</span>
+						</div>
+					</div>
+					<div>
+						<div>
+							<span>Attack</span>
+							<span>3</span>
+						</div>
+						<div>
+							<span>Defense</span>
+							<span>8</span>
+						</div>
+					</div>
+					<div>
+						<div>
+							<span>Drain</span>
+							<span>10%</span>
+						</div>
+						<div>
+							<span>Multiplier against fire</span>
+							<span>2</span>
+						</div>
+					</div>
+					<div>
+						<div>
+							<span>Attack</span>
+							<span>3</span>
+						</div>
+						<div>
+							<span>Defense</span>
+							<span>8</span>
+						</div>
+					</div>
+					<div>
+						<div>
+							<span>Drain</span>
+							<span>10%</span>
+						</div>
+						<div>
+							<span>Multiplier against fire</span>
+							<span>2</span>
+						</div>
+					</div>
+					<div>
+						<div>
+							<span>Attack</span>
+							<span>3</span>
+						</div>
+						<div>
+							<span>Defense</span>
+							<span>8</span>
+						</div>
+					</div>
+					<div>
+						<div>
+							<span>Drain</span>
+							<span>10%</span>
+						</div>
+						<div>
+							<span>Multiplier against fire</span>
+							<span>2</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="items">
+				<div id="pestañas">
+					<div data-item-type="ArmaDeUnaMano">Armas de una mano</div>
+					<div data-item-type="Escudo">Escudos</div>
+					<div data-item-type="Armadura">Armaduras</div>
+					<div data-item-type="Casco">Casco</div>
+					<div data-item-type="Amuleto">Amuleto</div>
+				<div>
+				<div id="lista"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

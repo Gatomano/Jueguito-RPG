@@ -1,0 +1,26 @@
+Fuego:
+	Heat beam: Prende fuego a los enemigos en una línea, haciendo [(30 - MDEF) × SPR × level / 50 ± 50%] durante 3 turnos por 6 de MP (stackea).
+	Burning hands: Prende fuego a los enemigos en un triángulo, haciendo [(70 - MDEF) × SPR × level / 50 ± 43%] durante 3 turnos por 12 de MP (stackea).
+	Enchant: Buff que agrega [(120 - MDEF) × SPR × level / 50] de daño al objetivo seleccionado por 60 de MP.
+	Hydra: Invoca tres cabezas de hidra por 48 de MP. Cada cabeza tiene uno de vida, es inmune al daño de fuego, [(60 - MDEF) × SPR × level / 50 ± 50%] de daño.
+	Meteor: Hace [(1320 - MDEF) × SPR × level / 50 ± 50%] en cruz después de dos turnos por 27 de MP (alcance desde donde se casteó 1).
+Hielo:
+	Ice barrier: Absorbe [(60 - MDEF) × SPR × level / 50] de daño por 5 de MP.
+	Frozen shield: Buff que aumenta la defensa en 30% y los atacantes de meleé son congelados por un turno a no ser que sean inmunes al agua, por 26 de MP. Incompatible con Fire shield y Static shield.
+	Frost nova: Hace [(40 - MDEF) × SPR × level / 50 ± 33%] de daño en un 'círculo' de radio dos, congelando a todos los afectados por un turno, por 22 de MP. 
+	Ice lance: Congela al objetivo por un turno. Si ya estaba congelado, le inflinge [(60 - MDEF) × SPR × level / 50] daño. Cuesta 7 de MP.
+	Congeal: Reduce la agilidad del objetivo en 50% por 3 turnos.
+Aire:
+	Thunderstorm: Hace [(80 - MDEF) × SPR / 50 ± 99%] de daño por 6 de MP a todos los enemigos.
+	Teleport: Te teletranspora al tile objetivo por 60 / level de MP.
+	Shockwave: Hace [(60 - MDEF) × SPR × level / 50 ± 99%] de daño por 7 de MP. Hace 50% más si el objetivo está congelado.
+	Chain lightning: Hace [(150 - MDEF) × SPR × level / 50 ± 99%] a un objetivo y rebota tres veces, haciendo al nuevo objetivo la mitad de daño que al objetivo anterior. Cuesta 22 de MP.
+	Blink: Pasivo. Al ser atacado tenés un 30% de chances de teletransportarte a un punto aleatorio del campo de batalla.
+Aire-Fuego:
+	Firestorm: Hace [(120 - MDEF) × SPR × 3 / 50 ± 50%] a todos los enemigos por 14 de MP.
+Hielo-Fuego:
+	Fire shield: Devuelve el 50% del daño de meleé recibido. Incompatible con Ice shield y Static shield.
+Aire-Hielo:
+	Static shield: Los ataques melee sobre una unidad aliada causan parálisis al atacante por dos turnos. Incompatible con Fire shield y Frozen shield.
+Común:
+	"Concentrancia": Aumenta la regeneración de MP en un tercio.
